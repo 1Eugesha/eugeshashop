@@ -347,5 +347,5 @@ if (tg.BackButton) {
     // tg.BackButton.show(); // Раскомментируйте если нужно
 }
 
-console.log('🎮 Digital Store initialized');
+console.log('🎮 EugeshaStore initialized');
 console.log('👤 User:', tg.initDataUnsafe?.user?.first_name || 'Guest');
