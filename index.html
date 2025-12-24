@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Digital Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">DIGI<span class="accent">STORE</span></span>
+            </h1>
+            <div class="cart-info" id="cartInfo">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Categories -->
+        <div class="categories">
+            <button class="category-btn active" data-category="all">Все</button>
+            <button class="category-btn" data-category="games">Игры</button>
+            <button class="category-btn" data-category="software">Софт</button>
+            <button class="category-btn" data-category="subscriptions">Подписки</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be inserted here by JS -->
+        </div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🛒 Корзина</h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="cartItems">
+                <!-- Cart items here -->
+            </div>
+            <div class="modal-footer">
+                <div class="total">
+                    Итого: <span id="modalTotal">0₽</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-text" id="toastText">Добавлено в корзину</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
