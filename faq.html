@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FAQ - Eugesha Store</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Telegram WebApp -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="faq.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Background Gradients -->
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+
+    <!-- MAIN APP CONTAINER -->
+    <div id="app">
+
+        <!-- VIEW 1: CATEGORIES LIST -->
+        <div id="view-categories" class="view active">
+            <header class="header blur-effect">
+                <div class="header-container">
+                    <h1 class="brand">Ответы на вопросы</h1>
+                </div>
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Поиск по FAQ..." id="searchInput">
+                </div>
+            </header>
+
+            <main class="main-content">
+                <div class="faq-list" id="categoriesList">
+                    <!-- Categories will be injected here -->
+                </div>
+            </main>
+        </div>
+
+        <!-- VIEW 2: QUESTIONS LIST -->
+        <div id="view-questions" class="view">
+            <header class="header blur-effect">
+                <div class="header-container header-nav">
+                    <button class="back-btn" id="backBtn">
+                        <span class="icon">❮</span> Назад
+                    </button>
+                    <h2 class="section-title" id="categoryTitle">Категория</h2>
+                </div>
+            </header>
+
+            <main class="main-content">
+                <div class="accordion-list" id="questionsList">
+                    <!-- Questions will be injected here -->
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="faq.js"></script>
+</body>
+
+</html>
